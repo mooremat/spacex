@@ -1,0 +1,150 @@
+
+.background-image {
+  background-image: url("./Assets/Alternative.jpg");
+  top: 0;
+  left: 0;
+  height: 100vh;
+  /* width: 100vw; */
+  background-size: cover; 
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.fa-angle-double-down {
+  font-size: 3rem;
+  color: whitesmoke;
+  background-color: #232B2B;
+  opacity: 0.7;
+  padding: 0.2rem 0.6rem;
+  border-radius: 30%;
+  animation: bounce 2s 2.5s infinite;;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.title-block {
+  position: absolute;
+  width: 80%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  animation: title 1.5s;
+}
+
+@keyframes title {
+  from {top: 60%;}
+  to {top: 40%;}
+}
+
+.title-block-2 {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  animation: title2 1s ease-out 1.5s forwards;
+}
+
+@keyframes title2 {
+  from {left: 0%; opacity: 0;}
+  to {left: 50%; opacity: 1;}
+}
+
+.card-border {
+  box-shadow: 0 2px 5px 0 rgba(169, 169, 169, 0.5);
+}
+
+body {
+  background-color: #2c3e50;
+  /* background-color: #f6f6f6; */
+}
+
+.card-tone {
+  background-color: lightgrey;
+}
+
+.card:hover {
+  animation: cardShake 0.2s linear;
+}
+
+@keyframes cardShake {
+ 0% { transform: rotate(2px, 1px) rotate(0deg); }
+50% { transform: translate(-1px, -2px) rotate(-1deg); }
+100% { transform: translate(-3px, 0px) rotate(1deg); }
+/* 30% { transform: translate(0px, 2px) rotate(0deg); }
+40% { transform: translate(1px, -1px) rotate(1deg); }
+50% { transform: translate(-1px, 2px) rotate(-1deg); }
+60% { transform: translate(-3px, 1px) rotate(0deg); }
+70% { transform: translate(2px, 1px) rotate(-1deg); }
+80% { transform: translate(-1px, -1px) rotate(1deg); }
+90% { transform: translate(2px, 2px) rotate(0deg); }
+100% { transform: translate(1px, -2px) rotate(-1deg); } */
+}
+
+.card:active {
+  transform: translateY(4px);
+}
+
+img:hover {
+  opacity: 0.8;
+}
+
+.spinner {
+  color: grey;
+  font-size: 3rem;
+  position: fixed;
+  top: 40%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+/* .flickr-img {
+  width: 350px;
+  height: 350px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.img-test {
+  max-width: 340px;
+  max-height: auto;
+  object-fit: contain;
+}
+
+img {
+  max-width: 100%;
+  opacity: 0.25;
+  /* height: auto; */
+}
+
+.launches{
+  background-image: url("./Assets/Suit.webp");
+  position: relative;
+  /* height: 100vh; */
+  /* width: 100vw; */
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container1 {
+  width: 85%;
+  margin: 0 auto;
+}
