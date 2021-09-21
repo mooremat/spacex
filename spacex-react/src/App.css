@@ -130,14 +130,14 @@ img:hover {
 
 img {
   max-width: 100%;
-  opacity: 0.25;
+  /* opacity: 0.25; */
   /* height: auto; */
 }
 
 .launches{
   background-image: url("./Assets/Suit.webp");
   position: relative;
-  /* height: 100vh; */
+  min-height: 100vh;
   /* width: 100vw; */
   background-size: cover; 
   background-position: center;
@@ -147,4 +147,8 @@ img {
 .container1 {
   width: 85%;
   margin: 0 auto;
+}
+
+.img-card {
+  opacity: 0.25;
 }

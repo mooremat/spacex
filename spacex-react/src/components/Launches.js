@@ -38,7 +38,7 @@ export class Launches extends Component {
         <LandingPage />
         <div className="launches">
           <div className="container">
-            {/* <SearchBar onChange={this.onChange} /> */}
+            <SearchBar onChange={this.onChange} />
             <div className="container-fluid">
               <Query query={LAUNCHES_QUERY}>
                 {
